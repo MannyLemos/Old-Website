@@ -1,0 +1,252 @@
+body 
+{
+    color: #000;
+    font-size: 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, label 
+{ 
+    color: #fff; 
+}
+
+.headers
+{
+    font-family: "Arial", Arial, sans-serif;
+}
+
+.breakable
+{
+    word-wrap: break-word;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* --------------------------------------------------------------- */
+
+/* "Explore" Dropdown Menu */
+.dropbtn 
+{
+    z-index: 1;
+    margin-left:  5px;  /* absolute position on page */
+    margin-top:  5px;  /* absolute position on page */
+    background-color: #3498DB;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: min(1rem, 2vh);
+}
+
+.dropdown 
+{
+    z-index: 1;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.2rem;
+}
+
+.dropdown-content a 
+{
+    margin-left:  5px;
+    color: black;
+    background-color: white;
+    font-size: min(1rem, 2vh);
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover 
+{
+    background-color: #ddd;
+}
+
+.show 
+{
+    display: block;
+}
+
+#about
+{
+    z-index: -1;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    text-align: left;
+    color: white;
+    padding: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+#proficiencies a:link,
+#proficiencies a:visited,
+#proficiencies a:hover {
+   color: black;
+}
+
+#resume
+{
+    align-content: center;
+    z-index: -1;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#contact
+{
+    align-content: center;
+    z-index: -1;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* --------------------------------------------------------------- */
+/* Flip Card Section */
+
+.flip-card 
+{
+    display: inline-block;
+    background-color: transparent;
+    width: min(300px, 75%);
+    perspective: 1000px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    margin-Left: 0rem;
+}
+
+.flip-card:active
+{
+    transform: scale(0.975);
+}
+
+.flip-card-inner 
+{
+    display: grid;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner 
+{
+    transform: rotateY(180deg);
+    transition-duration: 0.6s;
+}
+
+.flip-card-front, .flip-card-back 
+{
+    grid-area: 1/1;
+    box-shadow: 0 5px 10px black;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front 
+{
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back 
+{
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* --------------------------------------------------------------- */
+
+.project-card 
+{
+    display: block;
+    background-color: #2980b9;
+    color: black;
+    perspective: 1000px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    margin-Left: 0;
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px black;
+    border-radius: 0.5rem;
+}
+
+.project-card:active
+{
+    transform: scale(0.975);
+}
+
+.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: static;
+}
+
+a.text-link:link {
+    color: white;	
+}
+
+a.text-link:visited {
+    color: white;
+}
+
+a.text-link:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.socials {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 100;
+}
+
+.socials a:hover {
+    color: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.go-up a:hover {
+    color: none;
+    text-decoration: none;
+    background-color: transparent;
+}

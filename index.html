@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Browser Tab Icon -->
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Manuel Lemos' Portfolio</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+	
+<body>
+	<div class="dropdown" id="top">
+		<div align = "left" style = "position: fixed; z-index: 100;">
+			<button onclick="dropdownMenu()" class="dropbtn">Explore</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#top">To the Top</a>
+			<a href="#about">About Me</a>
+			<a href="#proficiencies">Proficiencies</a>
+			<a href="#projects">Projects & Accomplishments</a>
+			<a href="#contact">Contact Information</a>
+			<a href="resources/Manuel_Lemos_CV.pdf" target="_blank">Resume</a>
+		</div>
+	</div>
+		
+	<div class="socials">
+		<a href = "mailto:mannylemos@outlook.com" target="_blank">
+			<img border="0" alt="email" src="resources/email-logo.png" width="35" height="35">
+		</a>
+		
+		<a href="https://github.com/MannyLemos" target="_blank">
+			<img border="0" alt="github" src="resources/github-logo.png" class = "contact-link" width="35" height="35">
+		</a>
+		
+		<a href="https://www.linkedin.com/in/manuel-lemos-31a821170/" target="_blank">
+			<img border="0" alt="linkedin" src="resources/linkedin-logo.png" class = "contact-link" width="35" height="35">
+		</a>
+		
+		<a href="https://www.facebook.com/manny.lemos.94" target="_blank">
+			<img border="0" alt="facebook" src="resources/facebook-logo.png" class = "contact-link" width="35" height="35">
+		</a>
+	</div>
+	
+	<!-- screen height front page --> 
+	<div class="front-page">
+		<div id = "fadeIn" class = "breakable" style="display:none">
+			<h1 style="color:white; 
+				font-size:100px; 
+				text-shadow: -1px 1px 0 #000,
+				1px 1px 0 #000,
+				1px -1px 0 #000,
+				-1px -1px 0 #000;">
+				Manuel Lemos
+			</h1>
+			<h4 style = "text-shadow: -1px 1px 0 #000,
+				1px 1px 0 #000,
+				1px -1px 0 #000,
+				-1px -1px 0 #000;">
+				Fourth-year Mechatronics engineering student at McMaster University
+			</h4>
+		</div>
+	</div>
+			
+	<div id ="about">
+		<h2>About Me</h2>
+		<p>I am a fourth-year Mechatronics Engineering student completing my undergraduate degree at McMaster University. I couldn't constrain my career aspirations and love for the various fields of engineering to a single path. That is why I chose Mechatronics.
+		I am passionate about automation, saftware development, and circuit design. It is my training in these diverse fields which sets me apart.
+		Striking a balance between academics and extracurriculars has always been held paramount. I love to be active, and especially during the pandemic I find getting outside as the highlight of my day. Throughout my life, I have been a part of organized sports including hockey, soccer, baseball, and volleyball. It is these experiences that I hold extremely close and improved me as a communicator, teammate, and leader.</p><br>	
+		<div id ="proficiencies">
+			<p style="padding-bottom: 35px;"></p>
+			<h2>Proficiencies</h2>
+			<p>Programming Languages and Applications which I am capable in.</p>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #F8B195" class="flip-card-front">
+						<h1>C<br>C++</h1>
+					</div>
+					<div style="background-color: #F8B195" class="flip-card-back">
+						<p>I am comfortable programming in C and C++ having used it extensively during my undergraduate career.</p>
+						<p>I have programmed <a href="https://github.com/MannyLemos/Mechtron-3TA4" target="_blank">microcontrollers</a> in C.</p>
+						<p>I have written a <a href="https://github.com/MannyLemos/Technical-Report-Pointers-in-C" target="_blank">technical report</a> detailing pointers in C using abstract examples.</p>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #F67280" class="flip-card-front">
+						<h1>Python</h1>
+					</div>
+					<div style="background-color: #F67280" class="flip-card-back">
+						<p>I have completed 2 University courses in Python and is my go to language for personal projects.</p>
+						<p>Comfortable with classes, functions, algorithms, file management, and more.</p>
+						<p>Python is my primary coding language on <a href="https://leetcode.com/manuel_lemos/" target="_blank">leetcode</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div  class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #C06C84" class="flip-card-front">
+						<h1>Matlab<br>Simulink</h1>
+					</div>
+					<div style="background-color: #C06C84"class="flip-card-back">
+						<p>I have completed 5 University classes which make use of Matlab</p>
+						<p>Comfortable with using Matlab to solve a vast array of different types of mathematics problems.</p>
+						<p>Used Simulink as an abstract programming tool in a simulated <a href="https://github.com/MannyLemos/Pacemaker" target="_blank">pacemaker project</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color:#355C7D" class="flip-card-front">
+						<h1>HTML<br>CSS</h1>
+					</div>
+					<div style="background-color:#355C7D" class="flip-card-back">
+						<p>Learned HTML and CSS through the development of this website</p>
+						<p>Continuing to improve and develop skills and abilities by improving the functionality and aesthetics of this site. I hope to gain a deeper understanding of these languages.</p> 
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #9DE0AD" class="flip-card-front">
+						<h1>Autocad</h1>
+					</div>
+					<div style="background-color: #9DE0AD" class="flip-card-back">
+						<p>Learned and improved while working professionally for Hoffer Mechanical</p>
+						<p>Used to create drawings of various projects</p>
+						<p>Have passed Linkedin Assessment</p>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #45ADA8" class="flip-card-front">
+						<h1>Inventor</h1>
+					</div>
+					<div style="background-color: #45ADA8" class="flip-card-back">
+						<p>Have taken 1 University course which made use of Inventor.</p>
+						<p>Have used Inventor professionally while working for Hoffer Mechanical on various projects in both the creation, and interpretation of 3D environments.</p>
+					</div>
+				</div>
+			</div>
+			<div  class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color: #547980" class="flip-card-front">
+						<h1>Excel</h1>
+					</div>
+					<div style="background-color: #547980"class="flip-card-back">
+						<p>Have used Excel professionally while working for Hoffer Mechanical. Used in the job costing phase of quoting.</p>
+						<p>Comfortable creating functions, doing mass data entry, interpreting multipage sheets, and more.</p>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div style="background-color:#594F4F" class="flip-card-front">
+						<h1>VBA</h1>
+					</div>
+					<div style="background-color:#594F4F" class="flip-card-back">
+						<p>I have used Visual Basic for Applications extensively during my Co-Op at Indal Technologies.</p>
+						<p>I have used VBA to create an automailing system, a file backup system, interact with an Oracle Business system, automate the collection and analysis of large quantites of buisness performance data, and much more.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="projects">
+				<p style="padding-bottom: 35px;"></p>
+				<h2 class="headers">Projects</h2>
+					
+				<div class="project-card" style="background-color: #bdd0c4">
+					<h3 style="color:black;">Digital Thermometer and Cooling System - Programming a Microcontroller in C</h3>
+					<h5 style="color:black;">Academic Project - Fall 2020</h5>
+					<p>Built a digital thermometer circuit which interfaced with a microcontroller to display the current
+					temperature and the user selected setpoint temperature on an LCD display. If the temperature
+					exceeded the runtime changeable setpoint, a fan, whose circuit interfaced with the microcontroller,
+					turned on to cool the sensor at a speed relative to the temperature difference.</p>
+					<p>Made use of ADC channel to receive temperature sensor output and make digital conversion.</p>
+					<p>Made use of PWM timer to control fan speed.</p>
+				</div>
+				<div class="project-card" style="background-color: #9ab7d3">
+					<h3 style="color:black;">Personal Webpage </h3>
+					<h5 style="color:black;">Personal Project - Summer 2020</h5>
+					<p>First attempt at front end web development.</p>
+					<p>Built this simple portfolio webpage using bootstrap.</p>
+					<p>Written in HTML and CSS.</p>
+				</div>
+				<div class="project-card" style="background-color: #f5d2d3">
+					<h3 style="color:black;">Safety Data Sheet Online Library </h3>
+					<h5 style="color:black;">Professional Project - Summer 2019</h5>
+					<p>Made use of the free online cloud storage provided by google drive to create a high-quality safety data sheet repository.</p>
+					<p>Sought out safety data sheet information from manufactures across a wide breadth of fields. Organised the drive with employee input to maximise usability and functionality for the end users.</p>
+					<p>Presented the project to Hoffer Mechanical employees in conjunction with one on one technological support to solve any errors with drive access before the happened.</p>
+					<p>Created a full tutorial on drive maintenance along with a dating system, so as to ensure the upkeep of the drive was maintained in my absence.</p>
+				</div>
+				<div class="project-card" style="background-color: #f7e1d3">
+					<h3 style="color:black;">Door Accessibility Device </h3>
+					<h5 style="color:black;">Academic Project - Winter 2019</h5>
+					<p>A basic device making use of the positive relationship between torque and radius was conceptualized.</p>
+					<p>Engineering drawings were made, and a 3D model was created in Inventor.</p>
+					<p>A proof of concept, low fidelity, prototype was created.</p>
+					<p>A high fidelity, lightweight, and robust final product was created and delivered.</p>
+					<p>Gained experience in 2D / 3D modeling, and the engineering design process.</p>
+				</div>
+				<div class="project-card" style="background-color: #dfccf1">
+					<h3 style="color:black;">Prosthetic Hand </h3>
+					<h5 style="color:black;">Academic Project - Fall 2018</h5>
+					<p>Designed a 3 dimensional two-finger prosthetic hand and geartrain using Autodesk Inventor under strict size restrictions.</p>
+					<p>This design was tested using extensive simulation to ensure functionality.,<p>
+					<p>Each component was then exported to Slic3r and 3D printed.</p>
+					<p>These components were then sanded, lubed, and assembled to create a functional prosthetic hand.
+					<p>Gained experience using CAD software and performing dynamic simulations in Inventor.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id ="resume">
+		<div class="card-body">
+			<h2>Looking for my Resume?</h4>
+			
+			<div class="resumeBox">
+				<a href="resources/Manuel_Lemos_CV.pdf" target="_blank">
+				<img border="0" alt="resume" src="Manuel_Lemos_CV.png" class = "inline" width="300" height="390">
+				</a>
+			</div>
+			<a href="resources/Manuel_Lemos_CV.pdf" target="_blank" class="text-link">
+				Find it here
+			</a>
+		</div>
+	</div>
+
+	<div id ="contact">
+		<div class="card-body">
+			<h2>Want to get in Contact?</h2>
+			<h4>You can reach me at:</h4>
+			<img border="0" alt="email1" src="resources/email-logo.png" width="20" height="20">
+			<a href = "mailto:mannylemos@outlook.com" class = "text-link">
+				mannylemos@outlook.com
+			</a>
+			<br>
+			<img border="0" alt="email2" src="resources/email-logo.png"  width="20" height="20">
+			<a href = "mailto:lemosm1@mcmaster.ca.com" class = "text-link">
+				lemosm1@mcmaster.ca
+			</a>
+			<br>
+			<img border="0" alt="phone" src="resources/phone-logo.png" width="20" height="20">
+			<a href="tel: 289-230-6593" class = "text-link">
+				(289) 230-6593
+			</a>
+		</div>
+	</div>
+	
+	<div id ="to the top" align="center" class="go-up">
+		<a href="#top">
+		<img border="0" alt="beam-me-up" src="resources/beam-me-up.png" class="inline" width="200">
+		</a>
+	</div>
+
+	<!---  Java Script -->
+	<script src="scripts/index.js"></script>
+</body>
+	
+<footer>
+</footer>
+ 
